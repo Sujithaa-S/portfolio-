@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sujithaa | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f5f7ff;
+            color: #222;
+        }
+
+        /* Navigation */
+        nav {
+            background: #111827;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #60a5fa;
+        }
+
+        /* Home */
+        #home {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .home-content h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .home-content h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .home-content p {
+            font-size: 19px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #4f46e5;
+            padding: 13px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        section {
+            padding: 70px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+            color: #312e81;
+        }
+
+        /* About */
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background: white;
+            padding: 18px 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            font-weight: bold;
+        }
+
+        /* Projects */
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            width: 320px;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .project-card h3 {
+            color: #4f46e5;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        .project-btn {
+            background: #4f46e5;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        /* Education */
+        .education {
+            text-align: center;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        /* Certificates */
+        .certificates {
+            text-align: center;
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        .contact a {
+            color: #4f46e5;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .home-content h1 {
+                font-size: 40px;
+            }
+
+            .home-content h2 {
+                font-size: 22px;
+            }
+
+            section {
+                padding: 55px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Sujithaa</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Home -->
+    <section id="home">
+
+        <div class="home-content">
+
+            <h1>Hi, I'm Sujithaa 👋</h1>
+
+            <h2>Computer Science Engineering Student</h2>
+
+            <p>
+                Passionate about programming, technology
+                and building useful applications.
+            </p>
+
+            <a href="#projects" class="btn">
+                View My Projects
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about">
+
+            <p>
+                I am a Computer Science Engineering student
+                interested in programming, web development
+                and emerging technologies.
+            </p>
+
+            <p>
+                I enjoy learning new technologies and creating
+                projects that solve real-world problems.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">C</div>
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Git & GitHub</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+
+                <h3>🌐 Voice Translator</h3>
+
+                <p>
+                    An English ↔ Tamil voice translation
+                    application with speech recognition,
+                    translation and text-to-speech features.
+                </p>
+
+                <a
+                    href="https://sujithaa-s.github.io/translator-/"
+                    target="_blank"
+                    class="project-btn">
+                    View Project
+                </a>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>🗳️ Advanced Voting System</h3>
+
+                <p>
+                    A secure voting system project designed
+                    to manage voter registration, authentication,
+                    voting and result analysis.
+                </p>
+
+                <a href="#" class="project-btn">
+                    Coming Soon
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="education">
+
+            <h3>🎓 Computer Science Engineering</h3>
+
+            <p>
+                Government College of Technology,
+                Coimbatore
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Certificates -->
+    <section id="certificates">
+
+        <h2 class="section-title">Certificates</h2>
+
+        <div class="certificates">
+
+            <p>🏆 Speech Competition Certificate</p>
+            <p>🏆 Quiz Competition Certificate</p>
+            <p>🏆 Recitation Competition Certificate</p>
+            <p>📜 Technical Course Certificates</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact">
+
+            <p>
+                📧 Email:
+                <a href="mailto:your-email@gmail.com">
+                    your-email@gmail.com
+                </a>
+            </p>
+
+            <p>
+                💻 GitHub:
+                <a
+                    href="https://github.com/Sujithaa-S"
+                    target="_blank">
+                    GitHub Profile
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 Sujithaa. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+</html>

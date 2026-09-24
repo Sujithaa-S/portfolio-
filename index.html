@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sujitha | Portfolio</title>
+    <title>Sujithaa | Portfolio</title>
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -20,7 +22,8 @@
             color: #222;
         }
 
-        /* Navigation */
+        /* ================= NAVIGATION ================= */
+
         nav {
             background: #111827;
             padding: 18px 8%;
@@ -54,7 +57,9 @@
             color: #60a5fa;
         }
 
-        /* Home */
+
+        /* ================= HOME ================= */
+
         #home {
             min-height: 90vh;
             display: flex;
@@ -62,7 +67,13 @@
             align-items: center;
             text-align: center;
             padding: 30px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+
+            background: linear-gradient(
+                135deg,
+                #667eea,
+                #764ba2
+            );
+
             color: white;
         }
 
@@ -91,7 +102,13 @@
             font-weight: bold;
         }
 
-        /* Sections */
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+
+        /* ================= SECTIONS ================= */
+
         section {
             padding: 70px 10%;
         }
@@ -103,7 +120,9 @@
             color: #312e81;
         }
 
-        /* About */
+
+        /* ================= ABOUT ================= */
+
         .about {
             max-width: 850px;
             margin: auto;
@@ -112,7 +131,9 @@
             line-height: 1.8;
         }
 
-        /* Skills */
+
+        /* ================= SKILLS ================= */
+
         .skills-container {
             display: flex;
             flex-wrap: wrap;
@@ -124,11 +145,20 @@
             background: white;
             padding: 18px 25px;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+            box-shadow:
+                0 4px 12px rgba(0, 0, 0, 0.1);
+
             font-weight: bold;
         }
 
-        /* Projects */
+        .skill:hover {
+            transform: translateY(-5px);
+        }
+
+
+        /* ================= PROJECTS ================= */
+
         .projects-container {
             display: flex;
             justify-content: center;
@@ -138,36 +168,566 @@
 
         .project-card {
             background: white;
-            width: 320px;
+            width: 330px;
             padding: 25px;
             border-radius: 18px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+            box-shadow:
+                0 5px 15px rgba(0, 0, 0, 0.1);
+
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
         }
 
         .project-card h3 {
             color: #4f46e5;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
+            font-size: 22px;
         }
 
         .project-card p {
             line-height: 1.6;
-            margin-bottom: 18px;
+            margin-bottom: 15px;
         }
 
         .project-btn {
+            display: inline-block;
             background: #4f46e5;
             color: white;
             padding: 10px 18px;
             border-radius: 8px;
             text-decoration: none;
+            margin-top: 5px;
         }
 
-        /* Education */
+        .project-btn:hover {
+            background: #3730a3;
+        }
+
+
+        /* ================= VOTING PROJECT ================= */
+
+        .voting-details {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 18px;
+
+            box-shadow:
+                0 5px 15px rgba(0, 0, 0, 0.1);
+
+            line-height: 1.8;
+        }
+
+        .voting-details h3 {
+            color: #4f46e5;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .feature-list {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .feature-list li {
+            margin-bottom: 8px;
+        }
+
+
+        /* ================= EDUCATION ================= */
+
         .education {
             text-align: center;
             line-height: 1.8;
             font-size: 18px;
         }
 
-        /* Certificates */
-        .certificates {
+        .education h3 {
+            color: #4f46e5;
+            margin-bottom: 10px;
+        }
+
+
+        /* ================= CONTACT ================= */
+
+        .contact {
+            text-align: center;
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        .contact a {
+            color: #4f46e5;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .home-content h1 {
+                font-size: 40px;
+            }
+
+            .home-content h2 {
+                font-size: 22px;
+            }
+
+            .home-content p {
+                font-size: 17px;
+            }
+
+            section {
+                padding: 55px 6%;
+            }
+
+            .project-card {
+                width: 100%;
+            }
+
+            .voting-details {
+                padding: 25px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav>
+
+        <div class="logo">
+            Sujithaa
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#education">Education</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- ================= HOME ================= -->
+
+    <section id="home">
+
+        <div class="home-content">
+
+            <h1>
+                Hi, I'm Sujitha 👋
+            </h1>
+
+            <h2>
+                Computer Science Engineering Student
+            </h2>
+
+            <p>
+                Passionate about programming, technology
+                and building useful applications.
+            </p>
+
+            <a
+                href="#projects"
+                class="btn">
+
+                View My Projects
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+        <div class="about">
+
+            <p>
+                I am a Computer Science Engineering student
+                interested in programming, web development
+                and emerging technologies.
+            </p>
+
+            <br>
+
+            <p>
+                I enjoy learning new technologies and creating
+                projects that solve real-world problems.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills">
+
+        <h2 class="section-title">
+            Skills
+        </h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                C
+            </div>
+
+            <div class="skill">
+                Java
+            </div>
+
+            <div class="skill">
+                Python
+            </div>
+
+            <div class="skill">
+                HTML
+            </div>
+
+            <div class="skill">
+                CSS
+            </div>
+
+            <div class="skill">
+                JavaScript
+            </div>
+
+            <div class="skill">
+                Git & GitHub
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects">
+
+        <h2 class="section-title">
+            My Projects
+        </h2>
+
+
+        <div class="projects-container">
+
+
+            <!-- VOICE TRANSLATOR -->
+
+            <div class="project-card">
+
+                <h3>
+                    🌐 Voice Translator
+                </h3>
+
+                <p>
+                    An English ↔ Tamil voice translation
+                    application with speech recognition,
+                    translation and text-to-speech features.
+                </p>
+
+                <p>
+                    <strong>
+                        Technologies:
+                    </strong>
+
+                    HTML, CSS, JavaScript,
+                    Web Speech API
+                </p>
+
+                <!-- IMPORTANT LINK -->
+
+                <a
+                    href="https://sujithaa-s.github.io/translator-/"
+                    target="_blank"
+                    class="project-btn">
+
+                    View Live Project
+
+                </a>
+
+            </div>
+
+
+
+            <!-- ADVANCED VOTING SYSTEM -->
+
+            <div class="project-card">
+
+                <h3>
+                    🗳️ Advanced Voting System
+                </h3>
+
+                <p>
+                    A secure online voting system designed
+                    for voter registration, authentication,
+                    vote casting and result analysis.
+                </p>
+
+                <p>
+                    <strong>
+                        Technologies:
+                    </strong>
+
+                    C Programming,
+                    Data Structures
+                </p>
+
+                <a
+                    href="#voting-system"
+                    class="project-btn">
+
+                    View Project
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= VOTING SYSTEM DETAILS ================= -->
+
+    <section id="voting-system">
+
+        <h2 class="section-title">
+            Advanced Voting System
+        </h2>
+
+
+        <div class="voting-details">
+
+
+            <h3>
+                🗳️ Project Overview
+            </h3>
+
+            <p>
+                The Advanced Voting System is a secure voting
+                application designed to simplify the voting
+                process and maintain accurate voting records.
+            </p>
+
+
+
+            <h3>
+                ✨ Key Features
+            </h3>
+
+            <ul class="feature-list">
+
+                <li>
+                    👤 Voter Registration
+                </li>
+
+                <li>
+                    🔐 User Login & Authentication
+                </li>
+
+                <li>
+                    🧑‍💼 Candidate Management
+                </li>
+
+                <li>
+                    🗳️ Secure Vote Casting
+                </li>
+
+                <li>
+                    🚫 Duplicate Vote Prevention
+                </li>
+
+                <li>
+                    📊 Voting Results & Analysis
+                </li>
+
+                <li>
+                    📝 Activity Log & Security
+                </li>
+
+            </ul>
+
+
+
+            <h3>
+                💻 Technologies Used
+            </h3>
+
+            <p>
+                C Programming • Data Structures •
+                File Handling
+            </p>
+
+
+
+            <h3>
+                🎯 Project Objective
+            </h3>
+
+            <p>
+                The main objective of this project is to
+                provide a structured voting system that
+                manages voters, candidates and voting
+                results efficiently.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education">
+
+        <h2 class="section-title">
+            Education
+        </h2>
+
+        <div class="education">
+
+            <h3>
+                🎓 Computer Science Engineering
+            </h3>
+
+            <p>
+                Government College of Technology,
+                Coimbatore
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact">
+
+        <h2 class="section-title">
+            Contact
+        </h2>
+
+        <div class="contact">
+
+            <p>
+                📧 Email:
+                <a href="mailto: sujisbd31@gmail.com">
+                    sujisbd31@gmail.com
+                </a>
+            </p>
+
+            <p>
+                💻 GitHub:
+
+                <a
+                    href="https://github.com/Sujitha-S"
+                    target="_blank">
+
+                    GitHub Profile
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Sujitha. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
